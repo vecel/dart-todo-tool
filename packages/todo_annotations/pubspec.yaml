@@ -1,0 +1,5 @@
+name: todo_annotations
+description: Lightweight annotations package for Todos.
+version: 1.0.0
+environment:
+  sdk: ^3.9.2
