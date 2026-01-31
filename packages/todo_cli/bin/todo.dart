@@ -64,10 +64,10 @@ class _TodoVisitor extends RecursiveElementVisitor2 {
     final priority = value?.getField('priority');
     final relativePath = p.relative(filePath, from: rootPath);
 
-    final priorityMessage = priority != null 
-      ? '(priority: ${(priority as EnumElement).displayName})'
-      : null;
+    // final priorityMessage = priority != null 
+    //   ? '(priority: ${(priority as EnumElement).displayName})'
+    //   : null;
 
-    print('File: $relativePath. Todo: $description $priorityMessage for element: ${element.displayName}\n');
+    print('File: $relativePath. Todo: $description for element: ${element.displayName}\n');
   }
 }
